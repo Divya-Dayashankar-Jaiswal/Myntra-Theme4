@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en-US">
+    <head> <title>Virtual Try-On</title> </head>
+    <body style="font-family:times new roman">
+	<center>
+            <h2 style="color:red">Try out your clothes virtually</h2>
+            <p title="description" style="text-align:left"><em>See how well your clothes fit on you!</em> Follow the  steps given:
+            <br>STEP 1: Put your phone vertically on the floor and capture a photo of the background.
+            <br>STEP 2: Now take photos of yourself from front, left side, right side and back, 3 times each.
+            <br>STEP 3: Upload all 12 photos of yourself + 1 photo of the background in the space given below.
+            <br>STEP 4: Enter your height in cm and click on SUBMIT.</p>
+            <form action="UploadServlet" method="post" enctype="multipart/form-data">
+		<table style="width:80%; text-align:center">
+                    <tr>
+                        <th>Front side</th>
+			<th>Back side</th>
+			<th>Left side</th>
+			<th>Right side</th>
+			<th>Background</th>
+                    </tr>
+                    <tr>
+			<td><img src="E:\Myntra\front_demo.jpg" alt="upload images of front side below"></td>
+			<td><img src="E:\Myntra\back_demo.jpg" alt="upload images of back side below"></td>
+			<td><img src="E:\Myntra\left_demo.JPG" alt="upload images of left side below"></td>
+			<td><img src="E:\Myntra\right_demo.JPG" alt="upload images of right side below"></td>
+			<td><img src="E:\Myntra\background.JPG" alt="upload image of background below"></td>
+                    </tr>
+                    <tr>
+			<td><input type="file" id="front1" required></td>
+			<td><input type="file" id="back1" required></td>
+			<td><input type="file" id="left1" required></td>
+			<td><input type="file" id="right1" required></td>
+			<td><input type="file" id="background" required></td>
+                    </tr>
+                    <tr>
+			<td><input type="file" id="front" required></td>
+			<td><input type="file" id="back" required></td>
+			<td><input type="file" id="left2" required></td>
+			<td><input type="file" id="right2" required></td>
+                    </tr>
+                    <tr>
+			<td><input type="file" id="front3" required></td>
+			<td><input type="file" id="back3" required></td>
+			<td><input type="file" id="left3" required></td>
+			<td><input type="file" id="right3" required></td>
+                    </tr>
+		</table>
+		<p><input type="submit" value="SUBMIT PHOTOS"></p>
+            </form>
+	</center>
+    </body>
+</html>
